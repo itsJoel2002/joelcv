@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            margin: 0;
+            padding: 0;
+            color: #eee; /* White text */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            min-height: 100vh;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+
+        nav {
+            background-color: #333; /* Dark grey */
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed; /* Fixed position */
+            top: 0; /* Fixed to the top */
+            left: 0; /* Fixed to the left */
+            height: 100%; /* Take full height of the viewport */
+            width: 200px; /* Fixed width */
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+            background-color: #444; /* Dark grey */
+            border-radius: 8px;
+            padding: 10px;
+            width: 160px;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            background-color: #555; /* Slightly lighter grey on hover */
+        }
+
+        nav a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column; /* Stack pages vertically */
+            padding: 20px;
+            margin-left: 220px; /* Adjust for fixed menu width */
+        }
+
+        .page {
+            background-color: rgba(255, 255, 255, 0.9); /* Grey with 90% opacity */
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #333; /* Dark grey text */
+        }
+
+        header, section {
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #007acc;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header h1:hover {
+            color: #005f99;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #666; /* Medium grey */
+        }
+
+        section h2 {
+            color: #007acc;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            background: #e6f7ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        section ul li:hover {
+            background: #cceeff;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #005f99;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #666; /* Medium grey */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="menu-item"><a href="#home">Home</a></div>
+            <div class="menu-item"><a href="#about">About</a></div>
+            <div class="menu-item"><a href="#education">Education</a></div>
+            <div class="menu-item"><a href="#experience">Experience</a></div>
+            <div class="menu-item"><a href="#skills">Skills</a></div>
+            <div class="menu-item"><a href="#contact">Contact</a></div>
+        </nav>
+        <div class="content">
+            <div id="home" class="page">
+                <header>
+                    <h1>John Doe</h1>
+                    <p>Computer Science Student</p>
+                </header>
+            </div>
+
+            <div id="about" class="page">
+                <section>
+                    <h2>About Me</h2>
+                    <p>Hello! I am John Doe, a passionate Computer Science student with a keen interest in web development and software engineering. I am constantly learning and growing my skills to keep up with the evolving tech industry.</p>
+                </section>
+            </div>
+
+            <div id="education" class="page">
+                <section>
+                    <h2>Education</h2>
+                    <h3>University of Example</h3>
+                    <p>Bachelor of Science in Computer Science, 2020 - Present</p>
+                    <p>GPA: 3.8/4.0</p>
+                </section>
+            </div>
+
+            <div id="experience" class="page">
+                <section>
+                    <h2>Experience</h2>
+                    <h3>Software Development Intern</h3>
+                    <p>ABC Tech, Summer 2023</p>
+                    <ul>
+                        <li>Developed web applications using JavaScript, HTML, and CSS.</li>
+                        <li>Collaborated with a team of 5 developers to enhance user experience.</li>
+                        <li>Conducted code reviews and participated in agile ceremonies.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="skills" class="page">
+                <section>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Programming Languages: Java, Python, JavaScript</li>
+                        <li>Web Development: HTML, CSS, React</li>
+                        <li>Tools: Git, Docker, Jenkins</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="contact" class="page">
+                <section>
+                    <h2>Contact Information</h2>
+                    <p>Email: john.doe@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+               
